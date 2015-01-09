@@ -1,5 +1,9 @@
 #test makefile
-all: main.c
-	gcc -std=c99 main.c -o mygo
+SRC = ./src
+BIN = ./bin
+
+
+all:  $(SRC)/main.c
+	gcc -std=c99 $(SRC)/main.c -o $(BIN)/mygo
 clean: 
-	rm -f mygo
+	rm -f bin/mygo
